@@ -1,5 +1,5 @@
 # Andres Florez 
-## Sigueme en [LinkedIn](https://www.linkedin.com/in/jose-andres-florez-gutierrez/) para mas contenido! 
+## Sigueme en [LinkedIn](https://www.linkedin.com/in/jose-andres-florez-gutierrez/) para más contenido! 
 
 ## Modelo 2: Árbol de Decisión (Decision Tree)
 
