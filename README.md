@@ -9,14 +9,26 @@ valor numérico (en regresión). La ruta desde el nodo raíz hasta un nodo hoja 
 
 Son fáciles de interpretar y muy útiles cuando quieres entender cómo se toman las decisiones.
 
+✅ Ventajas:
 
-Ventajas: La Claridad al Servicio de la Inteligencia Artificial
-Intuitividad y Facilidad de Interpretación: Esta es, sin duda, su mayor fortaleza. La estructura de un árbol de decisión es inherentemente comprensible para los seres humanos, incluso para aquellos sin un profundo conocimiento técnico. Es fácil visualizar cómo se llega a una decisión final, lo que facilita la explicación de los resultados a stakeholders no técnicos.
-Manejo de Datos Heterogéneos: Pueden trabajar eficazmente con datos numéricos y categóricos simultáneamente sin necesidad de preprocesamientos complejos como la codificación one-hot.
-No Requieren Escalado de Características: A diferencia de muchos otros algoritmos (como las máquinas de vectores de soporte o las redes neuronales), los árboles de decisión no son sensibles a la escala de las características, lo que simplifica el preprocesamiento.
-Capacidad para Capturar Relaciones No Lineales: Pueden modelar relaciones complejas y no lineales entre las características de entrada y la variable objetivo, ya que dividen el espacio de características de forma recursiva.
-Identificación de Características Importantes: La construcción del árbol inherentemente revela qué características son más influyentes en la toma de decisiones, lo cual es útil para la selección de características y la ingeniería de características.
+La Claridad al Servicio de la Inteligencia Artificial
+
+#### Intuitividad y Facilidad de Interpretación 
+Esta es, sin duda, su mayor fortaleza. La estructura de un árbol de decisión es inherentemente comprensible para los seres humanos, incluso para aquellos sin un profundo conocimiento técnico. Es fácil visualizar cómo se llega a una decisión final, lo que facilita la explicación de los resultados a stakeholders no técnicos.
+
+#### Manejo de Datos Heterogéneos
+Pueden trabajar eficazmente con datos numéricos y categóricos simultáneamente sin necesidad de preprocesamientos complejos como la codificación one-hot.
+
+#### vNo Requieren Escalado de Características
+A diferencia de muchos otros algoritmos (como las máquinas de vectores de soporte o las redes neuronales), los árboles de decisión no son sensibles a la escala de las características, lo que simplifica el preprocesamiento.
+
+####  Capacidad para Capturar Relaciones No Lineales
+Pueden modelar relaciones complejas y no lineales entre las características de entrada y la variable objetivo, ya que dividen el espacio de características de forma recursiva.
+
+#### Identificación de Características Importantes 
+La construcción del árbol inherentemente revela qué características son más influyentes en la toma de decisiones, lo cual es útil para la selección de características y la ingeniería de características.
 Costo Computacional Relativamente Bajo: En general, la fase de entrenamiento es rápida, especialmente en comparación con modelos más complejos como las redes neuronales profundas.
+
 Desventajas: Conociendo sus Limitaciones
 Propensos al Sobreajuste (Overfitting): Si no se controlan adecuadamente (mediante la poda o la limitación de la profundidad), los árboles de decisión pueden ajustarse excesivamente a los datos de entrenamiento, capturando el ruido y perdiendo la capacidad de generalización a datos nuevos.
 Inestabilidad (Pequeños Cambios, Grandes Impactos): Pequeñas variaciones en los datos de entrenamiento pueden resultar en árboles de decisión completamente diferentes, lo que los hace inestables. Esto se debe a la naturaleza de la división binaria recursiva.
