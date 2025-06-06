@@ -88,4 +88,5 @@ Ejemplo: Competiciones de Kaggle, predicción de ventas minoristas a gran escala
 ### ▶️ Cómo ejecutar
 Abre los notebooks en Jupyter o VS Code y ejecuta las celdas, recuerda leer los comentarios en el código para entender su funcionamiento.
 
+## Sigueme en [LinkedIn](https://www.linkedin.com/in/jose-andres-florez-gutierrez/) para más contenido! 
 
