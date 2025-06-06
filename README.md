@@ -1,4 +1,5 @@
-# Andres Florez
+# Andres Florez 
+## Sigueme en [LinkedIn](https://www.linkedin.com/in/jose-andres-florez-gutierrez/) para mas contenido! 
 
 ## Modelo 2: Árbol de Decisión (Decision Tree)
 
@@ -83,3 +84,8 @@ Modelos de Conjunto para Alta Precisión (XGBoost, LightGBM):
 
 Ventaja: Cuando la interpretabilidad de un solo árbol no es la prioridad principal, pero la máxima precisión sí lo es, los algoritmos basados en árboles de decisión (como Gradient Boosting Machines) son la elección preferida para datos tabulares.
 Ejemplo: Competiciones de Kaggle, predicción de ventas minoristas a gran escala, optimización de motores de búsqueda, sistemas de recomendación.
+
+### ▶️ Cómo ejecutar
+Abre los notebooks en Jupyter o VS Code y ejecuta las celdas, recuerda leer los comentarios en el código para entender su funcionamiento.
+
+
