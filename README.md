@@ -28,9 +28,12 @@ Pueden modelar relaciones complejas y no lineales entre las características de 
 
 #### Identificación de Características Importantes 
 La construcción del árbol inherentemente revela qué características son más influyentes en la toma de decisiones, lo cual es útil para la selección de características y la ingeniería de características.
-Costo Computacional Relativamente Bajo: En general, la fase de entrenamiento es rápida, especialmente en comparación con modelos más complejos como las redes neuronales profundas.
 
-Desventajas: Conociendo sus Limitaciones
+#### Costo Computacional Relativamente Bajo
+En general, la fase de entrenamiento es rápida, especialmente en comparación con modelos más complejos como las redes neuronales profundas.
+
+❌ Desventajas:
+
 Propensos al Sobreajuste (Overfitting): Si no se controlan adecuadamente (mediante la poda o la limitación de la profundidad), los árboles de decisión pueden ajustarse excesivamente a los datos de entrenamiento, capturando el ruido y perdiendo la capacidad de generalización a datos nuevos.
 Inestabilidad (Pequeños Cambios, Grandes Impactos): Pequeñas variaciones en los datos de entrenamiento pueden resultar en árboles de decisión completamente diferentes, lo que los hace inestables. Esto se debe a la naturaleza de la división binaria recursiva.
 Sesgo con Clases Desequilibradas: Si la distribución de clases en los datos de entrenamiento está muy desequilibrada, el árbol puede estar sesgado hacia la clase mayoritaria.
