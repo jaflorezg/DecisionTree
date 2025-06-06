@@ -2,14 +2,13 @@
 
 ## Modelo 2: Árbol de Decisión (Decision Tree)
 
-📘 ¿Para qué sirve?
+🔹 ¿Para qué sirve?
 
-Los árboles de decisión son modelos que dividen los datos en ramas, tomando decisiones según condiciones simples. 
+Los árboles de decisión son modelos no paramétricos de aprendizaje supervisado que se utilizan tanto para tareas de clasificación como de regresión. Su estructura se asemeja a un diagrama de flujo, donde cada nodo interno representa una "pregunta" o una prueba sobre una característica del dataset, cada rama representa el resultado de esa prueba, y cada nodo hoja representa una etiqueta de clase (en clasificación) o un 
+valor numérico (en regresión). La ruta desde el nodo raíz hasta un nodo hoja representa una secuencia de decisiones.
 
 Son fáciles de interpretar y muy útiles cuando quieres entender cómo se toman las decisiones.
 
-Árboles de Decisión: Un Enfoque Intuitivo para la Toma de Decisiones
-Los árboles de decisión son modelos no paramétricos de aprendizaje supervisado que se utilizan tanto para tareas de clasificación como de regresión. Su estructura se asemeja a un diagrama de flujo, donde cada nodo interno representa una "pregunta" o una prueba sobre una característica del dataset, cada rama representa el resultado de esa prueba, y cada nodo hoja representa una etiqueta de clase (en clasificación) o un valor numérico (en regresión). La ruta desde el nodo raíz hasta un nodo hoja representa una secuencia de decisiones.
 
 Ventajas: La Claridad al Servicio de la Inteligencia Artificial
 Intuitividad y Facilidad de Interpretación: Esta es, sin duda, su mayor fortaleza. La estructura de un árbol de decisión es inherentemente comprensible para los seres humanos, incluso para aquellos sin un profundo conocimiento técnico. Es fácil visualizar cómo se llega a una decisión final, lo que facilita la explicación de los resultados a stakeholders no técnicos.
