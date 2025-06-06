@@ -1,6 +1,6 @@
 # Andres Florez
 
-##🌳 Modelo 2: Árbol de Decisión (Decision Tree)
+## Modelo 2: Árbol de Decisión (Decision Tree)
 
 📘 ¿Para qué sirve?
 
