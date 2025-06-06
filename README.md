@@ -19,8 +19,8 @@ Esta es, sin duda, su mayor fortaleza. La estructura de un árbol de decisión e
 #### Manejo de Datos Heterogéneos
 Pueden trabajar eficazmente con datos numéricos y categóricos simultáneamente sin necesidad de preprocesamientos complejos como la codificación one-hot.
 
-#### vNo Requieren Escalado de Características
-A diferencia de muchos otros algoritmos (como las máquinas de vectores de soporte o las redes neuronales), los árboles de decisión no son sensibles a la escala de las características, lo que simplifica el preprocesamiento.
+#### No Requieren Escalado de Características
+A diferencia de muchos otros algoritmos (como los Support Vector Machine o las redes neuronales), los árboles de decisión no son sensibles a la escala de las características, lo que simplifica el preprocesamiento.
 
 ####  Capacidad para Capturar Relaciones No Lineales
 Pueden modelar relaciones complejas y no lineales entre las características de entrada y la variable objetivo, ya que dividen el espacio de características de forma recursiva.
