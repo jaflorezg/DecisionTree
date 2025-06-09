@@ -12,8 +12,6 @@ Son fáciles de interpretar y muy útiles cuando quieres entender cómo se toman
 
 ✅ Ventajas:
 
-La Claridad al Servicio de la Inteligencia Artificial
-
 #### Intuitividad y Facilidad de Interpretación 
 Esta es, sin duda, su mayor fortaleza. La estructura de un árbol de decisión es inherentemente comprensible para los seres humanos, incluso para aquellos sin un profundo conocimiento técnico. Es fácil visualizar cómo se llega a una decisión final, lo que facilita la explicación de los resultados a stakeholders no técnicos.
 
@@ -34,18 +32,32 @@ En general, la fase de entrenamiento es rápida, especialmente en comparación c
 
 ❌ Desventajas:
 
-Propensos al Sobreajuste (Overfitting): Si no se controlan adecuadamente (mediante la poda o la limitación de la profundidad), los árboles de decisión pueden ajustarse excesivamente a los datos de entrenamiento, capturando el ruido y perdiendo la capacidad de generalización a datos nuevos.
-Inestabilidad (Pequeños Cambios, Grandes Impactos): Pequeñas variaciones en los datos de entrenamiento pueden resultar en árboles de decisión completamente diferentes, lo que los hace inestables. Esto se debe a la naturaleza de la división binaria recursiva.
-Sesgo con Clases Desequilibradas: Si la distribución de clases en los datos de entrenamiento está muy desequilibrada, el árbol puede estar sesgado hacia la clase mayoritaria.
-Ineficiencia en Conjuntos de Datos Muy Grandes: Para datasets con un número muy elevado de características o instancias, la construcción de un solo árbol de decisión puede volverse computacionalmente intensiva.
-Óptimo Local vs. Óptimo Global: El algoritmo greedy utilizado para construir árboles (seleccionando la mejor división en cada paso) no garantiza encontrar el árbol óptimo globalmente.
-Problemas con Datos Continuos (en algunas implementaciones): Aunque pueden manejar datos continuos, la forma en que se discretizan los puntos de corte puede no ser siempre óptima, y pueden generar límites de decisión "cuadrados" o "en forma de escalera" que no siempre representan la verdadera relación subyacente.
-Formas de Uso: Desde la Clasificación hasta los Conjuntos
+#### Propensos al Sobreajuste (Overfitting)
+Si no se controlan adecuadamente (mediante la poda o la limitación de la profundidad), los árboles de decisión pueden ajustarse excesivamente a los datos de entrenamiento, capturando el ruido y perdiendo la capacidad de generalización a datos nuevos.
+
+#### Inestabilidad (Pequeños Cambios, Grandes Impactos)
+Pequeñas variaciones en los datos de entrenamiento pueden resultar en árboles de decisión completamente diferentes, lo que los hace inestables. Esto se debe a la naturaleza de la división binaria recursiva.
+
+#### Sesgo con Clases Desequilibradas
+Si la distribución de clases en los datos de entrenamiento está muy desequilibrada, el árbol puede estar sesgado hacia la clase mayoritaria.
+
+#### Ineficiencia en Conjuntos de Datos Muy Grandes
+Para datasets con un número muy elevado de características o instancias, la construcción de un solo árbol de decisión puede volverse computacionalmente intensiva.
+
+#### Óptimo Local vs. Óptimo Global
+El algoritmo greedy utilizado para construir árboles (seleccionando la mejor división en cada paso) no garantiza encontrar el árbol óptimo globalmente.
+
+#### Problemas con Datos Continuos (en algunas implementaciones)
+Aunque pueden manejar datos continuos, la forma en que se discretizan los puntos de corte puede no ser siempre óptima, y pueden generar límites de decisión "cuadrados" o "en forma de escalera" que no siempre representan la verdadera relación subyacente.
+
+#### Formas de Uso: Desde la Clasificación hasta los Conjuntos
 Los árboles de decisión se utilizan fundamentalmente en dos grandes categorías:
 
-Clasificación: El objetivo es predecir una etiqueta de clase categórica.
+#### Clasificación: El objetivo es predecir una etiqueta de clase categórica.
+
 Ejemplo: Predecir si un cliente abandonará (churn) o no, clasificar correos electrónicos como spam o no spam, diagnosticar una enfermedad (presente/ausente).
 Funcionamiento: En cada nodo hoja, se asigna la clase mayoritaria de las instancias que caen en ese nodo.
+
 Regresión: El objetivo es predecir un valor numérico continuo.
 Ejemplo: Predecir el precio de una vivienda, el valor de las ventas futuras, la temperatura de un sensor.
 Funcionamiento: En cada nodo hoja, se asigna el promedio (o la mediana) de los valores de la variable objetivo de las instancias que caen en ese nodo.
@@ -57,22 +69,23 @@ Gradient Boosting (e.g., XGBoost, LightGBM, CatBoost): Construye árboles de for
 
 Bagging (Bootstrap Aggregating): Técnica general que entrena múltiples modelos (no solo árboles) en diferentes submuestras de los datos y combina sus predicciones.
 Los Mejores Ejemplos de Uso: Donde los Árboles Brillan
+
 Los árboles de decisión son particularmente efectivos en escenarios donde la interpretabilidad y la facilidad de comunicación de los resultados son cruciales, o como componentes fundamentales de modelos de conjunto más sofisticados.
 
 Diagnóstico Médico y Toma de Decisiones Clínicas:
-
 Ventaja: Los médicos necesitan entender el razonamiento detrás de un diagnóstico o una recomendación de tratamiento. Un árbol de decisión puede mostrar claramente las reglas clínicas que llevan a una conclusión (ej., "Si el paciente tiene fiebre ALTA Y tos persistente Y dificultad para respirar, entonces DIAGNÓSTICO: Neumonía").
+
 Ejemplo: Modelos para predecir la probabilidad de una enfermedad basándose en síntomas, resultados de pruebas y datos demográficos.
 Análisis de Churn de Clientes:
-
 Ventaja: Permite a las empresas identificar los factores clave que contribuyen a que un cliente abandone. La estructura del árbol puede revelar segmentos específicos de clientes en riesgo y las razones subyacentes.
+
 Ejemplo: Predecir qué clientes de telecomunicaciones o servicios de suscripción tienen una alta probabilidad de darse de baja, y qué características (ej., duración del contrato, uso de datos, quejas) son las más influyentes.
 Evaluación de Riesgo de Crédito y Fraude:
-
 Ventaja: En el sector financiero, es vital tener modelos transparentes para justificar las decisiones de aprobación de crédito o detección de fraude. Los árboles pueden delinear las reglas de negocio que indican un alto riesgo.
-Ejemplo: Determinar la solvencia de un solicitante de préstamo basándose en su historial crediticio, ingresos, y otros datos financieros. Detectar transacciones fraudulentas analizando patrones atípicos.
-Clasificación de Spam o Detección de Amenazas Cibernéticas:
 
+Ejemplo: Determinar la solvencia de un solicitante de préstamo basándose en su historial crediticio, ingresos, y otros datos financieros. Detectar transacciones fraudulentas analizando patrones atípicos.
+
+Clasificación de Spam o Detección de Amenazas Cibernéticas:
 Ventaja: La capacidad de identificar las características clave (palabras, direcciones IP, patrones de tráfico) que indican spam o un ataque es muy valiosa para la acción.
 Ejemplo: Un árbol podría clasificar un correo electrónico como spam si contiene ciertas palabras clave, proviene de una dirección IP sospechosa y tiene un formato inusual.
 Segmentación de Mercado y Marketing Dirigido:
