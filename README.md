@@ -50,7 +50,7 @@ El algoritmo greedy utilizado para construir árboles (seleccionando la mejor di
 #### 6. Problemas con Datos Continuos (en algunas implementaciones)
 Aunque pueden manejar datos continuos, la forma en que se discretizan los puntos de corte puede no ser siempre óptima, y pueden generar límites de decisión "cuadrados" o "en forma de escalera" que no siempre representan la verdadera relación subyacente.
 
-#### Formas de Uso: Desde la Clasificación hasta los Conjuntos
+# Formas de Uso: Desde la Clasificación hasta los Conjuntos
 Los árboles de decisión se utilizan fundamentalmente en dos grandes categorías:
 
 #### 1. Clasificación: El objetivo es predecir una etiqueta de clase categórica.
@@ -63,16 +63,16 @@ Los árboles de decisión se utilizan fundamentalmente en dos grandes categoría
   
 Más allá de un solo árbol: La verdadera potencia de los árboles de decisión a menudo se desata cuando se utilizan como modelos de conjunto (ensemble models):
 
-### Random Forest:
+## Random Forest:
 Construye múltiples árboles de decisión de forma independiente (utilizando bootstrapping y submuestreo aleatorio de características) y combina sus predicciones (votación para clasificación, promedio para regresión). Esto reduce el sobreajuste y aumenta la estabilidad.
 
-### Gradient Boosting (e.g., XGBoost, LightGBM, CatBoost): 
+## Gradient Boosting (e.g., XGBoost, LightGBM, CatBoost): 
 Construye árboles de forma secuencial, donde cada nuevo árbol intenta corregir los errores del árbol anterior. Son extremadamente potentes y suelen alcanzar el rendimiento más alto en tareas tabulares.
 
-### Bagging (Bootstrap Aggregating): 
+## Bagging (Bootstrap Aggregating): 
 Técnica general que entrena múltiples modelos (no solo árboles) en diferentes submuestras de los datos y combina sus predicciones.
 
-## Los Mejores Ejemplos de Uso: Donde los Árboles Brillan
+# Los Mejores Ejemplos de Uso: Donde los Árboles Brillan
 
 Los árboles de decisión son particularmente efectivos en escenarios donde la interpretabilidad y la facilidad de comunicación de los resultados son cruciales, o como componentes fundamentales de modelos de conjunto más sofisticados.
 
